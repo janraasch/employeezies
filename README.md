@@ -32,8 +32,9 @@ And, of course, read the [book][webdevclo] :).
 ## Other Chapters
  - Chapter 1-5, see https://github.com/janraasch/guestbook.
  - Chapter 6, see https://github.com/janraasch/catpics.
- - 1st part of chapter 7, see https://github.com/janraasch/clojure-db-examples
-
+ - 1st part of chapter 7, see https://github.com/janraasch/clojure-db-examples.
+ - 2nd part of chapter 7, see https://github.com/janraasch/employeezies.
+ 
 ## Contributing
 
 Not sure why you would want to contribute here, but, if you would like to contribute, please do so :). In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Plus, make sure to adhere to these [commit message conventions][commit].
