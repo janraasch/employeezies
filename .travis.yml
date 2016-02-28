@@ -4,7 +4,14 @@ env:
   global:
   - DATABASE_URL='jdbc:postgresql://localhost/travis_ci_test?user=postgres'
 before_script:
-  - psql -c 'create database travis_ci_test;' -U postgres
-branches: 
+- psql -c 'create database travis_ci_test;' -U postgres
+branches:
   only:
   - master
+deploy:
+  provider: heroku
+  api_key:
+    secure: dLKLTen8IjzQ+MsadxG5QXk6EQpBo+RNTaHiMm8rOtWplbHtLbwcjokvfr4otC1zWwvdQh4t1wrL3IB0qS9DwazBL6iRHuNmwiXKme3N1YS7w8O+NM4eQt5YMVBrsZixd0zZzdW6ZMHC1jccraJu7DSNJS9LgPxpNDdm9caMQPMPPIKpN4nSK0HfcwZGDIW51OCDyG0VVAoIEq8vuwj4yhz47NZivKfuaBHAEx7mUCuebyfmFUrDDo4lQOwfgiU0+RVEkV+R8wIV0WwWlAAqvdXD+i0VWXvpc8/G3QWP/Pu4foOLkVeR1/4vXl2MsOVl+SgNtgtFe39kHgYgRjiQd7mK6qh7LmXopWIsOSg7c56LOuwLEpdnzwELXWk8UXygyrpawVTbdVIePCIdMDbwuz7YXAhYiEQdFkhR/Bpd4B1GmI7M07zpwYlVTza3OD0iLb+A//zeAzcVZ3KNQcAz2mMXGpnMqB0Y8IuwjVCznDuU2/ZqKAIGky/Up61Inj+jVWmQ7j6pWuci//+VFCYQjifWKHpOmNBytMsOstyt1LdqrRgNYXMPli6hBDorJ2W1HVizUwRVx/91EaYFQ3oUojBgUA+X/d3D9KBln88zaQq86Kqa+sXDwFB8cs+v7dBKPPFcDSixcKYj3XfGAY8ghEXj/TLlDwJAYm046mI1spo=
+  app: employeezies
+  on:
+    repo: janraasch/employeezies
