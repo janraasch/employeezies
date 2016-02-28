@@ -5,7 +5,8 @@
 
 ## Prerequisites
 
-You will need [Leiningen][lein] 2.0 or above installed. Plus, you need [PostgreSQL][postgresql].
+You will need [Leiningen][lein] 2.0 or above installed. Plus, you need [PostgreSQL][postgresql]. Note to self: 
+Start homebrewed postgres on OS X via `postgres -D /usr/local/var/postgres`.
 
 ## Development
 First, initialize your development database running:
